@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn and SignUp Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="page">
+            <div class="header">
+                <button id="login1">login</button>
+                <button id="signup1">signup</button>
+            </div>
+            <!-- login -->
+            <div class="content">
+                <div class="login" id="login">
+                    <div id="loginId"></div>
+                    <input type="email" name="email" id="logEmail" placeholder="Email">
+                    <div id="msg"></div>
+
+                    <input type="password" name="password" id="logPassword" placeholder="Password">
+                    <div id="msg1"></div>
+
+                    <div id="check">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+
+                    <br><br>
+                    <button value="Login" onclick="validateLoginForm()" id="submit">SUBMIT</button>
+                    <br>
+                    <div>
+                        <a href="#" id="forpass">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- signup -->
+        <div class="signup" id="signup" style="display: none">
+            <input type="text" name="name" id="signFName" placeholder="Firstname">
+            <div id="errorMsg"></div>
+
+            <input type="text" name="name" id="signLName" placeholder="Lastname">
+            <div id="errorMsg1"></div>
+
+            <input type="email" name="email" id="signEmail" placeholder="Email">
+            <div id="errorMsg2"></div>
+
+            <input type="password" name="password" id="signPassword" placeholder="Password">
+            <div id="errorMsg3"></div>
+
+            <button value="SignUp" id="submitMsg" onclick="validateSignupForm()">SUBMIT</button>
+        </div>
+    </div>
+
+  <!-- forgot password -->
+  <div class="card" id="forgotPasswordEmail" style="display:none">
+    <p class="lock-icon"><i class="fa fa-lock"></i></p>
+    <h2>Forgot Password?</h2>
+    <input type="email" id="email" name="email" required>
+    <button type="button" id="sendEmail">Send OTP</button>
+</div>
+
+    <!-- OTP verification form -->
+    <div class="container" id="otpbox" style="display:none">
+        <h1>OTP Code Verification</h1>
+        <form id="otpForm">
+            <label for="otpCode">Enter the OTP code sent to your email:</label>
+            <input type="number" id="otpCode" name="otpCode" maxlength="4" minlength="4" required>
+            <button type="submit" id="verify">Verify OTP</button>
+        </form>
+    </div>
+
+  
+    <!-- change password -->
+
+    <!-- <div class="form-popup" id="myForm"> -->
+
+    <div class="chnpsw" id="myForm" style="display: none;">
+        <label for="password"><b>Current Password</b></label>
+        <input type="password" id="curpass" placeholder="Enter Current Password" required>
+        <div id="error1"></div>
+
+        <label for="password"><b>New password</b></label>
+        <input type="password" id="newpass" placeholder="Enter New Password" required>
+        <div id="error2"></div>
+
+        <button type="submit" class="btn" id="submitMsg" onclick="changepass()">Change</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
