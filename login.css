@@ -7,7 +7,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_640.jpg");
+    background-image: url(https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+
+    /* background-image: url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_640.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Verdana, Tahoma, sans-serif;
@@ -18,7 +20,7 @@ body {
     height: 600px;
     background-color: rgba(37, 36, 36, 0.7);
     padding: 20px;
-    margin: 5% 60%;
+    margin: 5% 40%;
     text-align: center;
     position: relative;
     box-sizing: border-box;
