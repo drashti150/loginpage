@@ -20,10 +20,11 @@ body {
     height: 600px;
     background-color: rgba(37, 36, 36, 0.7);
     padding: 20px;
-    margin: 5% 40%;
+    margin: 5% 38%;
     text-align: center;
     position: relative;
     box-sizing: border-box;
+    border-radius: 20px;
     flex-direction: column;
     box-shadow: 0 4px 10px 4px rgb(129, 81, 174);
 }
@@ -171,7 +172,7 @@ input[type=checkbox] {
     box-sizing: border-box;
     font-size: 17px;
     outline: none;
-    margin-left: 60%;
+    margin-left: 40%;
 }
 
 .lock-icon {
@@ -226,13 +227,14 @@ button[type="button"] {
     display: block;
     position: relative;
     border: 4px solid #ffffff;
-    padding: 12px;
+    /* padding: 12px; */
     margin-bottom: 40px;
     width: 25%;
     box-sizing: border-box;
     font-size: 17px;
     outline: none;
-    margin-left: 60%;
+    margin-left: 40%;
+    color: #ffffff;
 }
 h1 {
     text-align: center;
@@ -299,9 +301,9 @@ label{
     margin-top: 15%;
     flex-direction: column;
     align-items: center;
-    padding: 0px 20px;
+    padding: 10px 20px;
     width: 20%;
-    margin-left: 60%;
+    margin-left: 40%;
 }
 /* #submitMsg {
     display: block;
