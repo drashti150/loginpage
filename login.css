@@ -365,8 +365,8 @@ label{
     font-size: large;
 }
 #forpass a{
-    color: #c3bfbf;
+    color: #000000;
 }
 #forpass:hover{
-    color: #ec0f0f;
+    color: #eb0b0b;
 }
