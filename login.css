@@ -82,6 +82,7 @@ input[type=email] {
     box-sizing: border-box;
     font-size: 17px;
     outline: none;
+    border-radius: 10px;
 }
 
 input[type=text]:hover,
@@ -360,8 +361,8 @@ label{
     font-size: large;
 }
 #forpass a{
-    color: #000000;
+    color: #c3bfbf;
 }
 #forpass:hover{
-    color: #000000;
+    color: #ec0f0f;
 }
